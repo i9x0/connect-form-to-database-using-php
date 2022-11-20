@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<body>
+
+
+        <h1>upload Form</h1>
+
+    <a href="login.html">Logout</a>
+    <a href="display.php" style="margin-left: 100px;">Display</a>
+    <form action="contactinfo.php" method="post">
+        <table>
+            <tr>
+                <td>
+                    <h3>
+                        Which of these would you say describes your relationship with Texas A&M University?</h3>
+                </td>
+                <td>
+                    <input type="checkbox" name="relationship[]" value="Current Student" >Current Student<br>
+                    <input type="checkbox" name="relationship[]" value="Former Studentr">Former Studentr<br>
+                    <input type="checkbox" name="relationship[]" value="Prospective Student">Prospective Student <br>
+                    <input type="checkbox" name="relationship[]" value="Faculty/Staff Member">Faculty/Staff Member<br>
+                    <input type="checkbox" name="relationship[]" value="Parent">Parent<br>
+                    <input type="checkbox" name="relationship[]" value="General Public">General Public<br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Is this your first visit to our website?</h3>
+                </td>
+                <td>
+                    <input type="radio" name="firstvisit" value="Yes">Yes<br>
+                    <input type="radio" name="firstvisit" value="No">No<br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>If you answered 'No' to the question above, how often do you visit?</h3>
+                </td>
+                <td>
+                    <select name="Iffirstvisitno">
+                        <option value="Please select...">Please select...</option>
+                        <option value="More than once a week">More than once a week</option>
+                        <option value="Weekly">Weekly</option>
+                        <option value="Monthly">Monthly</option>
+                        <option value="Occasionally">Occasionally</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Feedback Category:</h3>
+                </td>
+                <td>
+                    <select name="FeedbackCategory">
+                        <option value="Please select...">Please select...</option>
+                        <option value="Broken Link, Website Problem, or Bug">Broken Link, Website Problem, or Bug
+                        </option>
+                        <option value="Content Navigation/Ease of Use">Content Navigation/Ease of Use</option>
+                        <option value="General Question or Feedback">General Question or Feedback</option>
+                        <option value="Suggestions">Suggestions</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <h3>What was your PRIMARY reason for visiting our website?</h3>
+                </td>
+                <td>
+                    <textarea name="PRIMARYreason" cols="2" rows="2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Were you able to find the information needed?</h3>
+                </td>
+                <td>
+                    <input type="radio" name="information">
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" name="information">
+                    <label for="Mostly">Mostly</label><br>
+                    <input type="radio" name="information">
+                    <label for="Somewhat">Somewhat</label><br>
+                    <input type="radio" name="information">
+                    <label for="no">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>WIf you were not able to find what you needed, please tell us what you were looking for:</h3>
+                </td>
+                <td>
+                    <textarea name="needed" cols="2" rows="2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Additional Feedback:</h3>
+                </td>
+                <td><br><br>
+                    <textarea name="AdditionalFeedback" cols="5" rows="2"></textarea><br>
+                    <p>
+                        If you need to report a broken link, website problem, bug, or <br> provide suggestions, please
+                        do so here.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Name:</h3>
+                </td>
+                <td>
+                    <input type="text" name="Name"><br>
+                    <p>
+                        Please enter your first and last name.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>E-mail:<font color="red"> * </font>
+                    </h3>
+                </td>
+                <td>
+                    <input type="email" name="Email" ><br>
+                    <p>
+
+                        Please enter a valid email address so we may contact you regarding the feedback provided.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Verification:<font color="red"> * </font>
+                    </h3>
+                </td>
+                <td>
+                    <input type="radio" name="Verification" value="I am not robot"> I am not robot<br>
+                    <input type="radio" name="Verification" value="I am robot">I am  robot<br>
+                </td>
+            </tr>
+
+        </table>
+        <center><input type="submit" name="submit" value="Submit"></center>
+    </form>
+
+
+</body>
+
+</html>
